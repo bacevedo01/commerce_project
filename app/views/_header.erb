@@ -1,0 +1,13 @@
+<header>
+
+<ul>
+  	<% if current_user %>
+    <li class="header"><a href="/sessions/logout">logout</a></li>
+    <li class="header"><a href="/">home</a></li> 
+   	<% else %>
+    <li class="header"><a href="/">home</a></li> 
+    <li class="header"><a href="/users/new">register</a></li>
+    <li class="header"><a href="/sessions/new">login</a></li>
+   	<% end %>
+</ul>
+</header>
